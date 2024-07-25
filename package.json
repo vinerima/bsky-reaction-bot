@@ -1,0 +1,32 @@
+{
+  "name": "bot",
+  "version": "0.0.1",
+  "description": "no disc horse bot",
+  "main": "index.ts",
+  "scripts": {
+    "initdb": "ts-node ./db/init.ts",
+    "start": "ts-node ./bot.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "bluesky",
+    "silly"
+  ],
+  "author": "Eric Vincent",
+  "license": "MIT",
+  "dependencies": {
+    "@atproto/api": "^0.12.24",
+    "cron": "^3.1.7",
+    "dayjs": "^1.11.12",
+    "dotenv": "^16.4.5",
+    "path": "^0.12.7",
+    "process": "^0.11.10",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12"
+  }
+}
