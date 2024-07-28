@@ -7,7 +7,7 @@ export const apiAgent = new BskyAgent({
 });
 
 export const getFollowers = async (actor: string) => {
-    return (await apiAgent.getFollowers({actor})).data.followers;
+    return (await apiAgent.getFollowers({actor, limit: 99})).data.followers;
 }
 
 export const getFollowerPosts = async (q: string, author: string, since?: string) => {
